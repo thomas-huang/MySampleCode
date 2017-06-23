@@ -19,9 +19,9 @@
 #include <assert.h>
 #include <stdio.h>
 #include <string.h>
-#include <error.h>
-#include <cthreads.h>
-#include <mach.h>
+#include <mach/error.h>
+#include <mach/cthreads.h>
+#include <mach/mach.h>
 
 struct message
 {
