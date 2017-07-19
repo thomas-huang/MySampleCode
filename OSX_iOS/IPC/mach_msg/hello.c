@@ -20,8 +20,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <mach/error.h>
-#include <mach/cthreads.h>
+#include "cthreads.h"
 #include <mach/mach.h>
+
+#define MACH_MSG_TYPE_STRING "hellomsg"
 
 struct message
 {
@@ -79,7 +81,7 @@ any_t server (any_t arg)
     }
     
   return 0;
-}   
+}
 
 int main (int argc, char *argv[])
 {
